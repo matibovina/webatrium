@@ -1,0 +1,567 @@
+/* colores paleta Baby Blue #C3E0E5 - Dark Blue #274472 - Blue Gray #5885AF - Midnight Blue #41729F - 
+
+#334257
+#476072
+#548CA8
+#EEEEEE
+*/
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 300;
+  font-size: 16px;
+  background-color: #476072;
+}
+/* Barra de navegacion y logo  */
+.logo {
+  margin: 22px auto 15px auto;
+  height: 100px;
+}
+.mainNav {
+  display: grid;
+  grid-template-rows: 3fr, 1fr;
+  align-items: center;
+  justify-content: center;
+  /* height: 180px; */
+  background-color: #548CA8;
+  overflow: hidden;
+}
+ul {
+  width: 100vw;
+  font-size: 0;
+}
+.menuBtn{
+  display: inline-block;
+  list-style: none; 
+  width: 16.66%;
+}
+.menuLink {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  font-size: 15px;
+  margin: 0;
+  color: black;
+  font-weight: 400;
+  text-decoration: none;
+  padding: 12px;
+}
+.menuLink:hover {
+  background: rgba(238, 238, 238, 0.7);
+  opacity: 75%;
+}
+.actual {
+  background-color: #334257;
+  color: #EEEEEE;
+}
+.actual:hover {
+  color: black;
+}
+
+/* Seccion principal */
+.mainSection{
+  display: flex;
+  flex-direction: column;
+  padding-bottom: 100px;
+}
+/* CSS Slider */
+.slider-container{
+  width: 100%;
+  max-width: 100vw;
+  margin: 0px auto;
+  overflow: hidden;
+  position: relative;
+}
+.slider{
+  display: flex;
+  width: 100%;
+  height: 50vh;
+  transition: "all 0.5s";
+}
+.sliderImg{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.sliderSection{
+width: 100%;
+}
+/* Botones slider */
+.sliderBtn{
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(238, 238, 238, 1);
+  opacity: 0.3;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 35px;
+  font-weight: 500;
+  border-radius: 50%;
+  text-align: center;
+  cursor: pointer;
+}
+.sliderBtn:hover{
+  opacity: 0.6;
+}
+.sliderBtnDer{
+  right: 15px;
+}
+.sliderBtnIzq{
+left: 15px;
+}
+/* Seccion Articulos */
+.articulos{
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 25rem), 1fr));
+  align-items: center;
+  justify-content: center;
+  margin: 40px 100px;
+}
+.articulo_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: rgba(238, 238, 238, 0.6);
+  width: 100%;
+}
+.img_box{
+  height: 45vh;
+  width: 100%;
+  overflow: hidden; 
+  border: 1px solid rgba(238, 238, 238, 0.7);
+
+}
+.articulo_container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.articulo_container h3 {
+  text-align: center;
+}
+.articulo_container p {
+  width: 90%;
+  text-align: justify;
+  padding: 10px;
+}
+
+/* Seccion FOOTER */
+.footer{
+  width: 100vw;
+  height: 100px;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background: #334257;
+align-items: center;
+/* margin-top: 50px; */
+}
+.social_media ul {
+  display: flex;
+  justify-content: center;
+  margin: auto;
+}
+.social_media ul li {
+display: inline-block;
+padding: 15px;
+
+} 
+.socialIcon{
+  display: inline ;
+  height: 30px;
+  color: #EEEEEE;
+}
+.mail{
+  text-align: center;
+  margin: auto;
+  color: #EEEEEE;
+}
+.mail a {
+  text-decoration: none;
+  color: #EEEEEE;
+}
+
+/* ALERTA COOKIES */
+.fondoCookies{
+  display: block;
+  background:rgba(238, 238, 238, 0.6);
+  width: 100vw;
+  height: 200vh;
+  position: absolute;
+  z-index: 150;
+}
+.cookies{
+  display: inline;
+  position: fixed;
+  z-index: 200;
+  height: 50vh;
+  width: 35vw;
+  background: #EEEEEE;
+  top: 40%;
+  left: 32.5vw;
+  text-align: center;
+}
+.btn-cookie{
+  text-decoration: none;
+  color: #EEEEEE;
+  background: #548CA8;
+  display: inline-block;
+  margin: 20px auto;
+  padding: 12px 20px;
+  font-size: 15px;
+}
+
+.cookies p {
+  padding: 20px 20px 0 20px;
+  text-align: justify;
+}
+
+/*--------------- PAGINA DE CONTACTO ----------------*/
+
+.contactSection{
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 40rem), 1fr));
+  align-items: center;
+  background: rgba(238, 238, 238, 0.6);
+  padding-bottom: 100px;
+}
+.cajaForm{
+  align-items: center;
+  max-width: 35vw;
+  max-height: 80vh;
+  display: flex;
+  flex-direction: column;
+  margin: 30px auto;
+  background-color: #334257;
+  padding: 20px;
+  border-radius: 5px;
+}
+.form{
+  display: inline-block;
+  width: 100%;
+  /* background-color: aqua; */
+  padding: 5px;
+}
+.form input, select{
+  width: 100%;
+  height: 30px;
+  margin: 0 auto;
+}
+/* .apellido{
+  width: 100%;
+} */
+.genero{
+margin-bottom: 5px;
+}
+.genero label {
+  color: #EEEEEE;
+}
+.genero input {
+  width: 15%;
+  height: 20px;
+}
+.textarea{
+  width: 99%;
+}
+.generoPersonalizado{
+  display: none;
+}
+.submit{
+  width: 99%;
+  margin-bottom: 20px;
+}
+.btnForm{
+  width: 100%;
+  padding: 5px;
+}
+.googlemaps{
+  margin: 50px auto;
+  /* width: 30vw; 
+  height: 25vh; */
+  /* max-width: 35vw; */
+  /* padding-bottom: 100px; */
+}
+.mensajeEnviado h3{
+  color: #EEEEEE;
+  text-align: center;
+  padding: 50px;
+  font-weight: 400;
+  font-size: 3rem;
+}
+.mensajeEnviado{
+  display: none;
+}
+/*--------------- PAGINA DE CLIENTES ----------------*/
+.clientesSection{
+  background: rgba(238, 238, 238, 0.6);
+  text-align: center;
+  padding-bottom: 100px;
+
+}
+.titulo{
+  background-color: #334257;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.clientesSection h3{
+  color: #EEEEEE;
+  text-align: center;
+  padding: 50px;
+  font-weight: 400;
+  font-size: 3rem;
+}
+.logosClientes img{
+  max-width: 400px;
+}
+.logosClientes{
+  padding: 50px;
+}
+/*--------------- PAGINA DE TARIFAS ----------------*/
+
+.tarifasSection{
+  background: rgba(238, 238, 238, 0.6);
+  text-align: center;
+  padding-bottom: 120px;
+}
+.tarifasSection h3{
+  color: #EEEEEE;
+  text-align: center;
+  padding: 50px;
+  font-weight: 400;
+  font-size: 3rem;
+}
+.tablaTarifas{
+  width: 40%;
+  font-size: 1.2rem;
+  color:#334257;
+  background-color: #548CA8;
+  margin: 0 auto;
+}
+.tablaTarifas, th, td{
+  /* border: 1px solid #334257; */
+  border-collapse: collapse;
+}
+.tablaTarifas2{
+  display: none;
+
+  /* margin: 0 auto; */
+}
+
+td {
+  height: 40px;
+  background: rgba(238, 238, 238, 0.6);
+
+}
+th{
+  height: 60px;
+}
+
+/*--------------- PAGINA DE SERVICIOS ----------------*/
+
+.serviciosSection{
+  width: 100vw;
+  padding-bottom: 100px;
+}
+.boxServicios{
+  width: 100%;
+  margin: 0 auto;
+}
+.listasServicios{
+  display: grid;
+  grid-template-columns:  repeat(3, 1fr);
+  width: 80vw;
+  margin: 0 auto;
+  padding: 30px;
+}
+.listasServicios a{
+  display: inline-block;
+  width: 90%;
+  margin: 5px auto;
+  text-decoration: none;
+  color: #EEEEEE;
+
+}
+.lista img{
+  max-width: 100%;
+}
+.lista h3 {
+  padding-top: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+  font-weight: 300;
+}
+
+/*--------------- PAGINA NOSOTROS ----------------*/
+.nosotrosBox{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 50px;
+  text-align: center;
+  padding-bottom: 100px;
+}
+.grupoImg{
+  width: 100%;
+  overflow: hidden;
+}
+.grupoImg img{
+  width: 100%;
+  height: 50vh;
+   object-fit: cover;
+}
+.retratoImg img{
+  width: 30%;
+  margin: 30px 0;
+}
+.nosotrosBox h3{
+  font-size: 1.5rem;
+  font-weight: 400;
+  margin: 30px 0;
+}
+.nosotrosBox p{
+  text-align: justify;
+  width: 80%;
+  margin: 0 auto;
+  /* padding: 30px 0; */
+}
+
+/* ------------MEDIA QUERIES------------ */
+.logoMobile{
+  display: none;
+}
+.icon{
+  display: none;
+}
+.googlemapsMobile{
+  display: none;
+}
+
+@media screen and (max-width: 1100px){
+  .slider{
+    height: 30vh;
+  }
+  .cajaForm{
+    max-width: 60vw;
+  }
+
+  .mensajeEnviado h3{
+    font-weight: 300;
+    font-size: 1.2rem;
+    
+  }
+  .cookies{
+    height: 40vh;
+    width: 70vw;
+    top: 30%;
+    left: 15%;
+  }
+  .cookies p {
+    font-size: 15px;
+  }
+  .listasServicios{
+    grid-template-columns: 1fr;
+  }
+  .tablaTarifas{
+    width: 70%;
+  }
+  .retratoImg img{
+    width: 70%;
+  }
+}
+@media screen and (max-width: 700px){
+  .tablaTarifas{
+    display: none;
+  }
+  .tablaTarifas2{
+    width: 90%;
+    display: flex;
+    justify-content: center;
+    margin: 10px auto;
+    align-items: center;
+    color:#334257;
+    background-color: #548CA8;
+    padding: 30px 0;
+  }
+  .tablaTarifas2 td{
+    width: 100%;
+    padding: 0 10px;
+    /* border: 1px solid #334257; */
+    border-collapse: collapse;
+    font-size: 20px;
+}
+  .mainNav {
+    display: block;
+  }
+  #linksMenu{
+    display: none;
+  }
+  .logoMobile{
+    display: block;
+    margin: 15px;
+    height: 50px;
+  }
+  .icon{
+    width: 30px;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    margin: 15px 15px 0  0; 
+  }
+  .menuBtn{
+    width: 100%; 
+  }
+  .mensajeEnviado h3{
+    font-weight: 300;
+    font-size: 1.1rem;
+  }
+  .cajaForm{
+    max-width: 70vw;
+  }
+  .logo{
+    display: none;
+  }
+  .googlemaps{
+    display: none;
+  }
+  .googlemapsMobile{
+    display: block;
+    margin: 20px auto;
+  }
+  .cookies{
+    height: 50vh;
+    width: 70vw;
+    top: 30%;
+    left: 15%;
+  }
+  .logosClientes img{
+    max-width: 200px;
+  }
+
+}
+@media screen and (max-width: 450px){
+  .articulos{
+    margin: 15px;
+  }
+  .slider{
+    display: none;
+  }
+  .cajaForm{
+    max-width: 96vw;
+  }
+  .genero{
+    font-size: 14px;
+  }
+
+}

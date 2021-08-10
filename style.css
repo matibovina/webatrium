@@ -252,7 +252,7 @@ width: 100%;
 }
 .genero-box{
   display: inline-block;
-  width: 32.6%;
+  width: 31.6%;
   text-align: center;
 }
 .genero label{
@@ -547,7 +547,11 @@ table, th, td{
     left: 5%;
   }
 }
-
+@media screen and (max-width: 300px){
+  .googlemapsMobile{
+    display: none;
+  }
+}
 /* colores paleta Baby Blue #C3E0E5 - Dark Blue #274472 - Blue Gray #5885AF - Midnight Blue #41729F - 
 
 #334257

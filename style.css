@@ -236,17 +236,21 @@ padding: 15px;
 .form{
   display: inline-block;
   width: 100%;
-  /* background-color: aqua; */
   padding: 5px;
 }
 .form input, select{
   width: 100%;
   height: 30px;
-  margin: 0 auto;
 }
 .genero{
 width: 100%;
 display: inline-block;
+width: 100%;
+}
+.genero-box{
+  display: inline-block;
+  width: 32.6%;
+  text-align: center;
 }
 .genero label{
   color: #EEEEEE;
@@ -255,6 +259,9 @@ display: inline-block;
 .genero input {
   width: 12%;
   height: 20px;
+}
+.otroGenero{
+  display: none;
 }
 .textarea{
   width: 100%;
@@ -266,7 +273,6 @@ input[type="radio"] {
 }
 .submit{
   width: 100%;
-  margin-bottom: 20px;
 }
 .btnForm{
   width: 100%;
@@ -533,7 +539,6 @@ table, th, td{
     top: 0%;
     left: 5%;
   }
-
 }
 
 /* colores paleta Baby Blue #C3E0E5 - Dark Blue #274472 - Blue Gray #5885AF - Midnight Blue #41729F - 

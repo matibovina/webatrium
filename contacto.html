@@ -53,16 +53,25 @@
         <div class="email form">
           <input type="email" name="email" id="emailForm" placeholder="ingrese su email">
         </div>
-        <div class="genero form">
+        <div class="genero form" onchange="obtenerGenero()">
+          <div class="genero-box">
           <label for="hombre">Hombre
-            <input type="radio" name="genero" id="">
+            <input type="radio" name="genero" value="hombre" id="">
           </label>
+        </div>
+          <div class="genero-box">
           <label for="mujer">Mujer
-            <input type="radio" name="genero" id="">
+            <input type="radio" name="genero" value="mujer" id="">
           </label>
+        </div>
+          <div class="genero-box">
           <label for="personalizado">Otro
-            <input type="radio" name="genero" id="testRadioButton" class="form personalizado" value="Otro">
+            <input type="radio" name="genero" id="testRadioButton" class="form personalizado" value="otro">
           </label>
+        </div>
+        </div>
+        <div class="otroGenero form">
+          <input type="text" name="genero" class="otroGenero1" id="" placeholder="Ingrese su genero">
         </div>
         <div class="cuadroTexto form">
           <textarea name="textarea" id="area" class="form textarea" cols="200" rows="3" placeholder="Escriba sus comentarios"></textarea>
@@ -103,5 +112,8 @@
     </footer>
 
   </div>
+  <script>
+
+    </script>
 </body>
 </html>

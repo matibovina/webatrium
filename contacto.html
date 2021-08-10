@@ -48,7 +48,7 @@
           <input type="text" name="apellido" class="apellidos" placeholder="ingrese su apellido">
         </div>
         <div class="fechaNac form">
-          <input type="date" name="fechaNacimiento" id="" placeholder="Fecha Nacimiento dd/mm/aaaa">
+          <input type="text" onfocus="(this.type='date')" name="fechaNacimiento" id="" placeholder="Fecha Nacimiento">
         </div>
         <div class="email form">
           <input type="email" name="email" id="emailForm" placeholder="ingrese su email">
@@ -61,13 +61,13 @@
             <input type="radio" name="genero" id="">
           </label>
           <label for="personalizado">Otro
-            <input type="radio" name="genero" id="testRadioButton" class="personalizado">
+            <input type="radio" name="genero" id="testRadioButton" class="form personalizado" value="Otro">
           </label>
         </div>
-        <div class="cuadroTexto">
+        <div class="cuadroTexto form">
           <textarea name="textarea" id="area" class="form textarea" cols="200" rows="3" placeholder="Escriba sus comentarios"></textarea>
         </div>
-        <div class="submit">
+        <div class="submit form">
           <input type="button" value="Enviar" class="btnForm" onclick="validacion()">
         </div>
       </div>

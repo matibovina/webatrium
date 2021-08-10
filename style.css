@@ -1,17 +1,8 @@
-/* colores paleta Baby Blue #C3E0E5 - Dark Blue #274472 - Blue Gray #5885AF - Midnight Blue #41729F - 
-
-#334257
-#476072
-#548CA8
-#EEEEEE
-*/
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: 'Poppins', sans-serif;
   font-weight: 300;
@@ -28,7 +19,6 @@ body {
   grid-template-rows: 3fr, 1fr;
   align-items: center;
   justify-content: center;
-  /* height: 180px; */
   background-color: #548CA8;
   overflow: hidden;
 }
@@ -139,7 +129,6 @@ left: 15px;
   width: 100%;
   overflow: hidden; 
   border: 1px solid rgba(238, 238, 238, 0.7);
-
 }
 .articulo_container img {
   width: 100%;
@@ -220,7 +209,6 @@ padding: 15px;
   padding: 12px 20px;
   font-size: 15px;
 }
-
 .cookies p {
   padding: 20px 20px 0 20px;
   text-align: justify;
@@ -238,7 +226,6 @@ padding: 15px;
 .cajaForm{
   align-items: center;
   max-width: 35vw;
-  max-height: 80vh;
   display: flex;
   flex-direction: column;
   margin: 30px auto;
@@ -257,39 +244,37 @@ padding: 15px;
   height: 30px;
   margin: 0 auto;
 }
-/* .apellido{
-  width: 100%;
-} */
 .genero{
-margin-bottom: 5px;
+width: 100%;
+display: inline-block;
 }
-.genero label {
+.genero label{
   color: #EEEEEE;
+  padding: 0;
 }
 .genero input {
-  width: 15%;
+  width: 12%;
   height: 20px;
 }
 .textarea{
-  width: 99%;
+  width: 100%;
 }
-.generoPersonalizado{
-  display: none;
+input[type="radio"] {
+  margin-top: -1px;
+  margin-right: -5px;
+  vertical-align: middle;
 }
 .submit{
-  width: 99%;
+  width: 100%;
   margin-bottom: 20px;
 }
 .btnForm{
   width: 100%;
   padding: 5px;
 }
+
 .googlemaps{
   margin: 50px auto;
-  /* width: 30vw; 
-  height: 25vh; */
-  /* max-width: 35vw; */
-  /* padding-bottom: 100px; */
 }
 .mensajeEnviado h3{
   color: #EEEEEE;
@@ -306,19 +291,18 @@ margin-bottom: 5px;
   background: rgba(238, 238, 238, 0.6);
   text-align: center;
   padding-bottom: 100px;
-
 }
 .titulo{
   background-color: #334257;
   width: 100%;
   margin-bottom: 20px;
 }
-.clientesSection h3{
+.titulo h3{
   color: #EEEEEE;
   text-align: center;
-  padding: 50px;
+  padding: 20px;
   font-weight: 400;
-  font-size: 3rem;
+  font-size: 2rem;
 }
 .logosClientes img{
   max-width: 400px;
@@ -333,13 +317,6 @@ margin-bottom: 5px;
   text-align: center;
   padding-bottom: 120px;
 }
-.tarifasSection h3{
-  color: #EEEEEE;
-  text-align: center;
-  padding: 50px;
-  font-weight: 400;
-  font-size: 3rem;
-}
 .tablaTarifas{
   width: 40%;
   font-size: 1.2rem;
@@ -347,22 +324,17 @@ margin-bottom: 5px;
   background-color: #548CA8;
   margin: 0 auto;
 }
-.tablaTarifas, th, td{
-  /* border: 1px solid #334257; */
+table, th, td{
   border-collapse: collapse;
 }
 .tablaTarifas2{
   display: none;
-
-  /* margin: 0 auto; */
 }
-
-td {
+.tablaTarifas td {
   height: 40px;
   background: rgba(238, 238, 238, 0.6);
-
 }
-th{
+.tablaTarifas th{
   height: 60px;
 }
 
@@ -389,7 +361,6 @@ th{
   margin: 5px auto;
   text-decoration: none;
   color: #EEEEEE;
-
 }
 .lista img{
   max-width: 100%;
@@ -433,7 +404,6 @@ th{
   text-align: justify;
   width: 80%;
   margin: 0 auto;
-  /* padding: 30px 0; */
 }
 
 /* ------------MEDIA QUERIES------------ */
@@ -458,7 +428,6 @@ th{
   .mensajeEnviado h3{
     font-weight: 300;
     font-size: 1.2rem;
-    
   }
   .cookies{
     height: 40vh;
@@ -484,21 +453,18 @@ th{
     display: none;
   }
   .tablaTarifas2{
-    width: 90%;
-    display: flex;
-    justify-content: center;
-    margin: 10px auto;
-    align-items: center;
-    color:#334257;
-    background-color: #548CA8;
-    padding: 30px 0;
-  }
-  .tablaTarifas2 td{
+    display: block;
     width: 100%;
-    padding: 0 10px;
-    /* border: 1px solid #334257; */
-    border-collapse: collapse;
-    font-size: 20px;
+    margin: 0 auto;
+  }
+  .tablaTarifas2, .tablaTarifas2 tr, .tablaTarifas2 td{
+    margin: 0 auto;
+    text-align: center;
+    width: 50%;
+    font-size: 1.1em;
+}
+.tablaTarifas2 th{
+  padding: 10px 0;
 }
   .mainNav {
     display: block;
@@ -564,9 +530,16 @@ th{
     font-size: 14px;
   }
   .cookies{
-
     top: 0%;
     left: 5%;
   }
 
 }
+
+/* colores paleta Baby Blue #C3E0E5 - Dark Blue #274472 - Blue Gray #5885AF - Midnight Blue #41729F - 
+
+#334257
+#476072
+#548CA8
+#EEEEEE
+*/

@@ -15,6 +15,9 @@ body {
   margin: 22px auto 15px auto;
   height: 100px;
 }
+.logo img{
+  margin: 0 auto 0 auto !important;
+}
 .mainNav {
   display: grid;
   grid-template-rows: 3fr, 1fr;
@@ -259,6 +262,10 @@ width: 100%;
 .genero input {
   width: 12%;
   height: 20px;
+}
+::placeholder {
+  font-family: 'Poppins', sans-serif;
+  padding-left: 10px;
 }
 .otroGenero{
   display: none;

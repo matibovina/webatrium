@@ -8,18 +8,17 @@ function obtenerGenero()
 {
     for (var i = 0; i < document.getElementsByName('genero').length; i++)
     {
-        if (document.getElementsByName('genero')[i].checked)
-        {
+        if (document.getElementsByName('genero')[i].checked) {
             if(document.getElementsByName('genero')[i].value == "otro"){
               document.querySelector(".otroGenero").style.display = "inline-block";
             } else {
               document.querySelector(".otroGenero").style.display = "none";
 
-            }
+            } 
         }
     }
 }
-function validacion(){
+  function validacion(){
   let motivo = document.getElementsByName('motivo')[0];
   let nombre = document.getElementsByName('nombre')[0];
   let apellido = document.querySelector('.apellidos');
@@ -42,21 +41,18 @@ function validacion(){
     nombre.style.border = "none";
     ok--;
   }
-  console.log(ok)
   if(apellido.value.length == 0){
     apellido.style.border  = "2px solid red";
   }else{
     apellido.style.border = "none";
     ok--;
   }
-  console.log(ok)
   if(fecha.value.length == 0){
     fecha.style.border = "2px solid red";
   }else{
     fecha.style.border  = "none";
     ok--;
   }
-  console.log(ok)
   if (!emailRegex.test(email.value)){
     email.style.border = "2px solid red";
    } else {
@@ -69,14 +65,6 @@ function validacion(){
     areaTexto.style.border = "none";
     ok--;
   }
-   if(guardarGenero.value.length == 0){
-    areaTexto.style.border  = "2px solid red";
-  }else{
-    areaTexto.style.border = "none";
-    ok--;
-  }
-
-
   if(ok == 0){
     miFuncion();
   }

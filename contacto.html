@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi pagina web</title>
+  <title>Foto Studio</title>
+  <link rel="shortcut icon" type="image/png" href="/img/favicon (3).png">
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,13 +13,12 @@
   <script src="app.js"></script>
   <script src="contacto.js"></script>
 </head>
-
 <body>
   <div class="container">
     <header class="header">
   </header>
   <nav class="mainNav">
-    <img class="logo" src="/img/Recurso 6.png" alt="">
+    <a href="index.html" class="logo"><img class="logo" src="/img/Recurso 6.png" alt=""></a>
     <img class="logoMobile" src="/img/Recurso 5.png" alt="">
     <ul id="linksMenu">
       <li class="menuBtn"><a class="menuLink" id="prueba" href="index.html">Home</a></li>
@@ -42,16 +42,16 @@
             </select>
         </div>
         <div class="nombre form">
-          <input type="text" name="nombre" placeholder="ingrese su nombre">
+          <input type="text" name="nombre" placeholder="Ingrese su nombre">
         </div>
         <div class="apellido form">
-          <input type="text" name="apellido" class="apellidos" placeholder="ingrese su apellido">
+          <input type="text" name="apellido" class="apellidos" placeholder="Ingrese su apellido">
         </div>
         <div class="fechaNac form">
           <input type="text" onfocus="(this.type='date')" name="fechaNacimiento" id="" placeholder="Fecha Nacimiento">
         </div>
         <div class="email form">
-          <input type="email" name="email" id="emailForm" placeholder="ingrese su email">
+          <input type="email" name="email" id="emailForm" placeholder="Ingrese su email">
         </div>
         <div class="genero form" onchange="obtenerGenero()">
           <div class="genero-box">
@@ -110,10 +110,6 @@
       </div>
       <div class="mail"><a href="mailto: info@fotostudio.com" target="_blank">info@fotostudio.com</a></div>
     </footer>
-
   </div>
-  <script>
-
-    </script>
 </body>
 </html>

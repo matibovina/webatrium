@@ -60,27 +60,27 @@ function validacion(){
 
 }
 
-function getRadioValue(genero)
-{
+// function getRadioValue(genero)
+// {
 
-    var elements = document.getElementsByName(genero);
-    for (var i = 0, l = elements.length; i < l; i++)
-    {
-        if (elements[i].checked)
-        {
-            console.log(elements[i].value);
-        }
-    }
-}
+//     var elements = document.getElementsByName(genero);
+//     for (var i = 0, l = elements.length; i < l; i++)
+//     {
+//         if (elements[i].checked)
+//         {
+//             console.log(elements[i].value);
+//         }
+//     }
+// }
 
-function myFunction() {
-  var i;
-  for (i = 0; i < 2; i++) {
-    if (genero[2].checked) {
-      console.log("si funciona");
-    }
-  }
-}
+// function myFunction() {
+//   var i;
+//   for (i = 0; i < 2; i++) {
+//     if (genero[2].checked) {
+//       console.log("si funciona");
+//     }
+//   }
+// }
 
 // var date_regex = /^(0[1-9]|1[0-2])\/(0[1-9]|1\d|2\d|3[01])\/(0[1-9]|1[1-9]|2[1-9])$/;
 // var testDate = "03/17/21"

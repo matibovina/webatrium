@@ -2,7 +2,7 @@
 FUNCIONES PARA MOSTRAR COOKIES
 */
 
-function quitarVentana(){
+function quitarVentana() {
   document.getElementById('sacarCookies').style.display = "none";
   document.getElementById('quitarFondo').style.display = "none";
 }
@@ -30,8 +30,8 @@ function desplegarMenu() {
 
 // function Next() {
 //   let sliderSectionFirst = document.getElementsByClassName("sliderSection")[0];
-  // slider.style.marginLeft = "-200%";
-  // slider.style.transition = "all 0.5s";
+// slider.style.marginLeft = "-200%";
+// slider.style.transition = "all 0.5s";
 //   setTimeout(function(){
 //     slider.style.transition = "none";
 //     slider.insertAdjacentElement("beforeend", sliderSectionFirst);

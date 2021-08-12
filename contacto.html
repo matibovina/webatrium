@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,103 +9,113 @@
   <link rel="stylesheet" href="style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,300&display=swap"
+    rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   <script src="app.js"></script>
   <script src="contacto.js"></script>
 </head>
+
 <body>
   <div class="container">
     <header class="header">
-  </header>
-  <nav class="mainNav">
-    <a href="index.html" class="logo"><img class="logo" src="/img/Recurso 6.png" alt=""></a>
-    <img class="logoMobile" src="/img/Recurso 5.png" alt="">
-    <ul id="linksMenu">
-      <li class="menuBtn"><a class="menuLink" id="prueba" href="index.html">Home</a></li>
-      <li class="menuBtn"><a class="menuLink" href="lista.html">Servicios</a></li>
-      <li class="menuBtn"><a class="menuLink" href="nuestros_clientes.html">Clientes</a></li>
-      <li class="menuBtn"><a class="menuLink" href="quienes_somos.html">Nosotros</a></li>
-      <li class="menuBtn"><a class="menuLink" href="tarifas.html">Tarifas</a></li>
-      <li class="menuBtn"><a class="menuLink actual" href="#">Contacto</a></li>
-    </ul>
-    <a href="#" class="icon" onclick="desplegarMenu()"><img src="/img/bars-solid.svg" alt=""></a>
-  </nav>
+    </header>
+    <nav class="mainNav">
+      <a href="index.html" class="logo"><img class="logo" src="/img/Recurso 6.png" alt=""></a>
+      <img class="logoMobile" src="/img/Recurso 5.png" alt="">
+      <ul id="linksMenu">
+        <li class="menuBtn"><a class="menuLink" id="prueba" href="index.html">Home</a></li>
+        <li class="menuBtn"><a class="menuLink" href="lista.html">Servicios</a></li>
+        <li class="menuBtn"><a class="menuLink" href="nuestros_clientes.html">Clientes</a></li>
+        <li class="menuBtn"><a class="menuLink" href="quienes_somos.html">Nosotros</a></li>
+        <li class="menuBtn"><a class="menuLink" href="tarifas.html">Tarifas</a></li>
+        <li class="menuBtn"><a class="menuLink actual" href="#">Contacto</a></li>
+      </ul>
+      <a href="#" class="icon" onclick="desplegarMenu()"><img src="/img/bars-solid.svg" alt=""></a>
+    </nav>
     <section class="contactSection">
-    <form action="contacto.html" method="" class="formulario">
-      <div class="cajaForm">
+      <form action="contacto.html" method="" class="formulario">
+        <div class="cajaForm">
           <div class="motivo form">
-            <select name="motivo" id="motivoConsulta"  required>
+            <select name="motivo" id="motivoConsulta" required>
               <option value="ningun">Motivo de la consulta</option>
               <option value="consulta">Consulta</option>
               <option value="reclamo">Reclamo</option>
               <option value="sugerencia">Sugerencia</option>
             </select>
+          </div>
+          <div class="nombre form">
+            <input type="text" name="nombre" placeholder="Ingrese su nombre">
+          </div>
+          <div class="apellido form">
+            <input type="text" name="apellido" class="apellidos" placeholder="Ingrese su apellido">
+          </div>
+          <div class="fechaNac form">
+            <input type="text" onfocus="(this.type='date')" name="fechaNacimiento" id="" placeholder="Fecha Nacimiento">
+          </div>
+          <div class="email form">
+            <input type="email" name="email" id="emailForm" placeholder="Ingrese su email">
+          </div>
+          <div class="genero form" onchange="obtenerGenero()">
+            <div class="genero-box">
+              <label for="hombre">Hombre
+                <input type="radio" name="genero" value="hombre" id="">
+              </label>
+            </div>
+            <div class="genero-box">
+              <label for="mujer">Mujer
+                <input type="radio" name="genero" value="mujer" id="">
+              </label>
+            </div>
+            <div class="genero-box">
+              <label for="personalizado">Otro
+                <input type="radio" name="genero" id="testRadioButton" class="form personalizado" value="otro">
+              </label>
+            </div>
+          </div>
+          <div class="otroGenero form">
+            <input type="text" name="genero" class="otroGenero1" id="" placeholder="Ingrese su genero">
+          </div>
+          <div class="cuadroTexto form">
+            <textarea name="textarea" id="area" class="form textarea" cols="200" rows="3"
+              placeholder="Escriba sus comentarios"></textarea>
+          </div>
+          <div class="submit form">
+            <input type="button" value="Enviar" class="btnForm" onclick="validacion()">
+          </div>
         </div>
-        <div class="nombre form">
-          <input type="text" name="nombre" placeholder="Ingrese su nombre">
-        </div>
-        <div class="apellido form">
-          <input type="text" name="apellido" class="apellidos" placeholder="Ingrese su apellido">
-        </div>
-        <div class="fechaNac form">
-          <input type="text" onfocus="(this.type='date')" name="fechaNacimiento" id="" placeholder="Fecha Nacimiento">
-        </div>
-        <div class="email form">
-          <input type="email" name="email" id="emailForm" placeholder="Ingrese su email">
-        </div>
-        <div class="genero form" onchange="obtenerGenero()">
-          <div class="genero-box">
-          <label for="hombre">Hombre
-            <input type="radio" name="genero" value="hombre" id="">
-          </label>
-        </div>
-          <div class="genero-box">
-          <label for="mujer">Mujer
-            <input type="radio" name="genero" value="mujer" id="">
-          </label>
-        </div>
-          <div class="genero-box">
-          <label for="personalizado">Otro
-            <input type="radio" name="genero" id="testRadioButton" class="form personalizado" value="otro">
-          </label>
-        </div>
-        </div>
-        <div class="otroGenero form">
-          <input type="text" name="genero" class="otroGenero1" id="" placeholder="Ingrese su genero">
-        </div>
-        <div class="cuadroTexto form">
-          <textarea name="textarea" id="area" class="form textarea" cols="200" rows="3" placeholder="Escriba sus comentarios"></textarea>
-        </div>
-        <div class="submit form">
-          <input type="button" value="Enviar" class="btnForm" onclick="validacion()">
-        </div>
+      </form>
+      <div class="mensajeEnviado titulo">
+        <h3>SU MENSAJE FUE ENVIADO CON EXITO</h3>
       </div>
-    </form>
-    <div class="mensajeEnviado titulo">
-      <h3>SU MENSAJE FUE ENVIADO CON EXITO</h3>
-    </div>
 
-    <div class="googlemaps">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1391.3118680711793!2d2.189908356133354!3d41.40239959331913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a323dbd5241d%3A0x95abc33040714e90!2sTorre%20Agbar!5e0!3m2!1ses!2ses!4v1628064732709!5m2!1ses!2ses" width="630" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
-    <div class="googlemapsMobile">
-      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1391.3118680711793!2d2.189908356133354!3d41.40239959331913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a323dbd5241d%3A0x95abc33040714e90!2sTorre%20Agbar!5e0!3m2!1ses!2ses!4v1628064732709!5m2!1ses!2ses" width="300" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-    </div>
+      <div class="googlemaps">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1391.3118680711793!2d2.189908356133354!3d41.40239959331913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a323dbd5241d%3A0x95abc33040714e90!2sTorre%20Agbar!5e0!3m2!1ses!2ses!4v1628064732709!5m2!1ses!2ses"
+          width="630" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+      <div class="googlemapsMobile">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1391.3118680711793!2d2.189908356133354!3d41.40239959331913!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12a4a323dbd5241d%3A0x95abc33040714e90!2sTorre%20Agbar!5e0!3m2!1ses!2ses!4v1628064732709!5m2!1ses!2ses"
+          width="300" height="350" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </div>
     </section>
-    
+
     <aside class="publicidad">
     </aside>
 
     <footer class="footer">
       <div class="social_media">
         <ul>
-          <li>   <a href="https://www.facebook.com/" target="_blank"><img class="socialIcon" src="/img/facebook-brands.svg" alt=""></a></li>
+          <li> <a href="https://www.facebook.com/" target="_blank"><img class="socialIcon"
+                src="/img/facebook-brands.svg" alt=""></a></li>
           <li>
-            <a href="https://www.instagram.com/" target="_blank"><img class="socialIcon" src="img/instagram-brands.svg" alt=""></a>
+            <a href="https://www.instagram.com/" target="_blank"><img class="socialIcon" src="img/instagram-brands.svg"
+                alt=""></a>
           </li>
           <li>
-            <a href="https://www.youtube.com/" target="_blank"><img class="socialIcon" src="img/youtube-brands.svg" alt=""></a>
+            <a href="https://www.youtube.com/" target="_blank"><img class="socialIcon" src="img/youtube-brands.svg"
+                alt=""></a>
           </li>
         </ul>
       </div>
@@ -112,4 +123,5 @@
     </footer>
   </div>
 </body>
+
 </html>
